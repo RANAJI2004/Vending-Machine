@@ -24,6 +24,19 @@ This project simulates a simple Finite State Machine (FSM)-based vending machine
   - `change` shows remaining money if more than ₹15 is inserted
 
 ---
+## 📋 FSM State Transition Table
+
+| Current State | Input  | Next State | Dispense (`out`) | Change (`change`) |
+|---------------|--------|-------------|-------------------|--------------------|
+| S0 (₹0)       | ₹0     | S0          | 0                 | ₹0 (2'b00)         |
+| S0 (₹0)       | ₹5     | S1          | 0                 | ₹0 (2'b00)         |
+| S0 (₹0)       | ₹10    | S2          | 0                 | ₹0 (2'b00)         |
+| S1 (₹5)       | ₹0     | S0          | 0                 | ₹5 (2'b01)         |
+| S1 (₹5)       | ₹5     | S2          | 0                 | ₹0 (2'b00)         |
+| S1 (₹5)       | ₹10    | S0          | 1 (dispensed)     | ₹0 (2'b00)         |
+| S2 (₹10)      | ₹0     | S0          | 0                 | ₹10 (2'b10)        |
+| S2 (₹10)      | ₹5     | S0          | 1 (dispensed)     | ₹0 (2'b00)         |
+| S2 (₹10)      | ₹10    | S0          | 1 (dispensed)     | ₹5 (2'b01)         |
 
 ## 📁 File Structure
 
