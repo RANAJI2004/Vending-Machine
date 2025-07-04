@@ -1,7 +1,4 @@
 # Vending-Machine
-Verilog-based Finite State Machine (FSM) project simulating a vending machine that accepts ₹5 and ₹10 coins to dispense a single product worth ₹15 with proper change handling.
-
-
 This project simulates a simple Finite State Machine (FSM)-based vending machine using Verilog. The machine accepts ₹5 and ₹10 currency denominations and dispenses **a single product worth ₹15**. If the inserted amount exceeds ₹15, the machine also returns the appropriate change.
 
 ---
