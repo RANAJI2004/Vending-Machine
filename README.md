@@ -46,7 +46,7 @@ This project simulates a simple Finite State Machine (FSM)-based vending machine
 ## 📷 Output Sample
 
 > Simulation shows proper dispense and change output based on ₹5 and ₹10 inputs.
-
+<img width="700" alt="symbol" src="https://github.com/RANAJI2004/Vending-Machine/blob/main/Waveform.png">
 ---
 
 ## 🛠️ Tools Used
